@@ -11,5 +11,13 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  searchvalue : string='';
+  displayalert : boolean=false;
+  showinput(event:any){
+    // console.log(event);
+    this.searchvalue=((<HTMLInputElement> event.target).value);
+  }
+  closealert(){
+    this.displayalert=true;
+  }
 }

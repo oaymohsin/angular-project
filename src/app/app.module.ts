@@ -7,6 +7,9 @@ import { HeaderComponent } from './MainPortal/Header/header/header.component';
 import { FooterComponent } from './MainPortal/Footer/footer/footer.component';
 import { HomeComponent } from './MainPortal/Home/home/home.component';
 import { ContactUsComponent } from './MainPortal/ContactUs/contact-us/contact-us.component';
+import { DirectiveComponent } from './MainPortal/Directive/directive/directive.component';
+import { ShopComponent } from './MainPortal/Shop/shop/shop.component';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { ContactUsComponent } from './MainPortal/ContactUs/contact-us/contact-us
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    DirectiveComponent,
+    ShopComponent,
+    
   ],
   imports: [
     BrowserModule,
