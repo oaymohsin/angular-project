@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col" *ngFor="let abc of productslist" >
+            <div class="card" style="width: 18rem;" [hidden]="displaycard">
+                <button class="btn-close ms-auto" (click)="closecard($event)"></button>
+                <img [src]="abc.productimage" class="card-img-top" alt="...">
+                <div class="card-body" >
+                  <h5 class="card-title">{{abc.Productname}}</h5>
+                  <p class="card-text">{{abc.productdetails}}</p>
+                  <a class="btn btn-primary">Product ID : {{abc.id}}</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
